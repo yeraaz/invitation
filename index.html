@@ -427,7 +427,9 @@
         </div>
       </div>
 
-      <button class="submit-btn" id="submitBtn" onclick="submitForm()" disabled="">Жіберу</button>
+    <button class="submit-btn" id="submitBtn" onclick="submitForm()" disabled>
+  	  <span id="btnText">Жіберу</span>
+	</button>
     </div>
 
     <div class="success" id="successMsg">
@@ -477,6 +479,14 @@
       alert("Атыңызды енгізіңіз");
       return;
     }
+
+	const btn = document.getElementById("submitBtn");
+	const btnText = document.getElementById("btnText");
+
+	btn.disabled = true;
+	btn.style.opacity = "0.7";
+
+	btnText.innerHTML = "Жіберілуде...";
 
     const data = {
       name: name,
