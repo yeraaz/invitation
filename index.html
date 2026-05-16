@@ -26,18 +26,23 @@
 
   /* ── HERO ── */
   .hero {
-  background: linear-gradient(
-    135deg,
-    #5BA8FF,
-    #7BC8FF
-  );
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 3.5rem 2rem 5rem;
+    background: linear-gradient(
+      135deg,
+      #7BB8FF,
+  	  #5B9DFF
+    );
 }
 
   .hero::before {
     content: '50';
     position: absolute;
     font-family: 'Playfair Display', serif;
-    font-size: 280px;
+    font-size: 220px;
     font-weight: 700;
     color: rgba(255,255,255,0.10);
     top: -30px;
@@ -52,7 +57,7 @@
 	font-weight: 700;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: rgba(255,255,255,0.75);
     margin-bottom: 1.5rem;
   }
 
@@ -62,6 +67,8 @@
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0.5rem;
+	color: white;
+	text-align: center;
   }
 
   .hero-desc {
@@ -313,7 +320,7 @@
   .invite-text {
     max-width: 760px;
     margin: -2rem auto 2.5rem;
-    background: rgba(255,255,255,0.96);
+    background: rgba(255,255,255,0.98);
     border: 1px solid var(--border);
 	border-top: 4px solid #005AFF;
     border-radius: 18px;
