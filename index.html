@@ -8,12 +8,12 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
  :root {
-  --gold: #C9A54C;
-  --gold-light: #FFF7E7;
+  --gold: #005AFF;
+  --gold-light: #EAF2FF;
   --dark: #005AFF;
-  --gray: #7A746C;
-  --light-gray: #FFFDF8;
-  --border: #EFE7D8;
+  --gray: #5E6B84;
+  --light-gray: #F5F9FF;
+  --border: #DCE8FF;
   --white: #FFFFFF;
 }
 
@@ -26,7 +26,11 @@
 
   /* ── HERO ── */
   .hero {
-    background: var(--dark);
+  background: linear-gradient(
+    135deg,
+    #005AFF,
+    #3B82FF
+  );
     color: var(--white);
     text-align: center;
     padding: 5rem 2rem 4rem;
@@ -66,7 +70,7 @@
 
   .hero-desc {
     font-size: 16px;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.75);
     font-weight: 300;
     margin-bottom: 2.5rem;
   }
@@ -150,7 +154,7 @@
     display: inline-block;
     margin-top: 12px;
     padding: 0.55rem 1rem;
-    background: var(--dark);
+    background: #005AFF;
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -315,6 +319,7 @@
     margin: -2rem auto 2.5rem;
     background: rgba(255,255,255,0.96);
     border: 1px solid var(--border);
+	border-top: 4px solid #005AFF;
     border-radius: 18px;
     padding: 1.6rem 2rem;
     text-align: center;
